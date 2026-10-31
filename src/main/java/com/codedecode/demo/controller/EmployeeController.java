@@ -53,7 +53,7 @@ public class EmployeeController{
 	 return new ResponseEntity<Employee>(getretrived,HttpStatus.OK);
 	}
 	
-	@DeleteMapping("/delete/{empid}")
+	@DeleteMapping("/delete1/{empid}")
 	public ResponseEntity<Void> deletebyId(@PathVariable("empid") Long empID){
 		empserviceinterface.deletebyId(empID);
 		return new ResponseEntity<Void>(HttpStatus.ACCEPTED);
